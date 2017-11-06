@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by dominikmach on 06/11/2017.
@@ -17,6 +19,7 @@ public class CSVReader {
     BufferedReader br = null;
     private String line = "";
     private static final String CSVSPLITBY = ";";
+    List<String> cards;
 
     public String readCSV() {
         try {
@@ -25,7 +28,8 @@ public class CSVReader {
             while ((line = br.readLine()) != null) {
 
                 // use CSVSPLITBY as a separator
-                String[] card = line.split(CSVSPLITBY);
+                cards = new ArrayList<String>();
+
 
                 System.out.println("Country [code= " + card[4] + " , name=" + card[5] + "]");
 
