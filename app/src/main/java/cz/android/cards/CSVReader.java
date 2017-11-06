@@ -18,7 +18,7 @@ public class CSVReader {
     private String line = "";
     private static final String CSVSPLITBY = ";";
 
-    readCSV() {
+    public String readCSV() {
         try {
 
             br = new BufferedReader(new FileReader(CSVFILE));
