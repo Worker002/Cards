@@ -15,4 +15,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <SearchView
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="231dp" />
+
 </android.support.constraint.ConstraintLayout>
