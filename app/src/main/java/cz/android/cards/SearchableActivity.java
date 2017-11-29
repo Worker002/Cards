@@ -4,6 +4,11 @@ import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+
 /**
  * Created by dominikmach on 09/11/2017.
  */
@@ -26,12 +31,32 @@ public class SearchableActivity {
         Intent intent = getIntent();
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
             String query = intent.getStringExtra(SearchManager.QUERY);
-            doMySearch(query);
+            readCsv(query);
+        }
+    }
+
+    private void readCsv<String>(String query) {
+        public List<String> readCSV() {
+            String csvFile = "power.csv";
+            String line = "";
+            String csvSplitBy = ",";
+            List<String> cards = null;
+
+            try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+                while ((line = br.readLine()) != null) {
+                    String[] cardsLine = line.split(csvSplitBy);
+
+                    cards.add(("Card position: " + cardsLine[0] + " version: " + cardsLine[1] + " Card name: " + cardsLine[2] + " Played: " + cardsLine[3] + " Wins: " + cardsLine[8] + " Power: " + cardsLine[13]));
+                }
+            } catch (IOException e) {
+                System.out.println("Shit happens... ");
+                e.printStackTrace();
+            }
+            return cards;
         }
     }
 
     //getMenuInflater().inflate(R.menu.main_activity_actions, menu);
     //MenuItem searchItem = menu.findItem(R.id.action_search);
     //SearchView searchView = (searchView) MenuItemCompat.getActionView(searchItem);
-}
 }
