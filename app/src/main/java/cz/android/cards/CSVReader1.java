@@ -16,7 +16,7 @@ import java.util.Scanner;
  */
 
 public class CSVReader1 {
-
+/*
     private static final String CSVFILE = "power.csv";
     private static final String CSVSPLITBY = ";";
     private static final char DEFAULT_QUOTE = '"';
@@ -114,5 +114,5 @@ public class CSVReader1 {
 
             return result;
         }
-    }
+    }*/
 }

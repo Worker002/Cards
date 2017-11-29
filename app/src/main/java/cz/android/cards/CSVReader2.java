@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Created by domin on 11/29/2017.
  */
 
-public class CSVReader2 {
+public class CSVReader2 {/*
     private static final char DEFAULT_SEPARATOR = ',';
     private static final char DEFAULT_QUOTE = '"';
 
@@ -121,5 +121,5 @@ public class CSVReader2 {
             result.add(curVal.toString());
 
             return result;
-        }
+        }*/
     }
