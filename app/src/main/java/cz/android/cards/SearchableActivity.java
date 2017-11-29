@@ -30,8 +30,8 @@ public class SearchableActivity {
         }
     }
 
-        //getMenuInflater().inflate(R.menu.main_activity_actions, menu);
-        //MenuItem searchItem = menu.findItem(R.id.action_search);
-        //SearchView searchView = (searchView) MenuItemCompat.getActionView(searchItem);
-    }
+    //getMenuInflater().inflate(R.menu.main_activity_actions, menu);
+    //MenuItem searchItem = menu.findItem(R.id.action_search);
+    //SearchView searchView = (searchView) MenuItemCompat.getActionView(searchItem);
+}
 }
