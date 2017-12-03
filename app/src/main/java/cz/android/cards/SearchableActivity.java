@@ -1,5 +1,6 @@
 package cz.android.cards;
 
+import android.app.ListActivity;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,12 +9,13 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
+import static R.layout.class;
 
 /**
  * Created by dominikmach on 09/11/2017.
  */
 
-public class SearchableActivity {
+public class SearchableActivity extends ListActivity{
     /*@Override
     public boolean onCreateOptionsMenu() {
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
@@ -35,7 +37,7 @@ public class SearchableActivity {
         }
     }
 
-    private void readCsv<String>(String query) {
+    public void readCsv<String>(String query) {
         public List<String> readCSV() {
             String csvFile = "power.csv";
             String line = "";
