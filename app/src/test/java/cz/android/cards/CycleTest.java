@@ -1,5 +1,7 @@
 package cz.android.cards;
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -12,11 +14,24 @@ import cz.android.cards.Cycle;
  */
 
 public class CycleTest {
-    @Test
-    public void test(){
+
+    @BeforeClass
+    public void prepareData() {
         List<Card> lc = new ArrayList<>();
 
     }
 
+    List<Card> lc = new ArrayList<>();
+
+    @Test
+    public void test() {
+        List<Card> lc = new ArrayList<>();
+
+    }
+
+    @AfterClass
+    public void deleteData() {
+        lc = null;
+    }
 
 }
