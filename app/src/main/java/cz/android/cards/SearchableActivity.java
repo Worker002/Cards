@@ -22,7 +22,7 @@ public class SearchableActivity {
         ComponentName componentName = new ComponentName(context, SearchableActivity.class);
         searchView.setSearchableInfo(searchManager.getSearchableInfo(componentName));
 */
-    @Override
+    /*@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search);
@@ -33,9 +33,9 @@ public class SearchableActivity {
             String query = intent.getStringExtra(SearchManager.QUERY);
             readCsv(query);
         }
-    }
+    }*/
 
-    private void readCsv<String>(String query) {
+    /*private void readCsv<String>(String query) {
         public List<String> readCSV() {
             String csvFile = "power.csv";
             String line = "";
@@ -54,7 +54,7 @@ public class SearchableActivity {
             }
             return cards;
         }
-    }
+    }*/
 
     //getMenuInflater().inflate(R.menu.main_activity_actions, menu);
     //MenuItem searchItem = menu.findItem(R.id.action_search);
