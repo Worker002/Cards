@@ -19,7 +19,9 @@ public class CycleTest {
     public void prepareData() {
         List<Card> lc = new ArrayList<>();
 
-    }
+
+        lc.add();
+        }
 
     List<Card> lc = new ArrayList<>();
 
