@@ -15,7 +15,7 @@ import cz.android.cards.Cycle;
 
 public class CycleTest {
 
-    @BeforeClass
+    /*@BeforeClass
     public void prepareData() {
         List<Card> lc = new ArrayList<>();
 
@@ -35,5 +35,5 @@ public class CycleTest {
     public void deleteData() {
         lc = null;
     }
-
+*/
 }

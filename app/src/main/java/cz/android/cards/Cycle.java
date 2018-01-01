@@ -11,7 +11,7 @@ import java.util.List;
  */
 
 public class Cycle {
-    List<Card> getNamesForWithIterator(List<Card> cards) {
+    /*List<Card> getNamesForWithIterator(List<Card> cards) {
         List<Card> result = new ArrayList<>();
 
         for (Card c : cards) {
@@ -24,7 +24,7 @@ public class Cycle {
         List<Card> result = new ArrayList<>();
         int size = cards.size();
 
-        for (int i = 0 ; i<size ; i++) {
+        for (int i = 0 ; i<cards.size() ; i++) {
             result.add(cards.get(i));
         }
         return result;
@@ -42,6 +42,7 @@ public class Cycle {
         return result;
     }
 
+    //chybicka se vloudila
     List<Card> getNamesWhileWithIterator(List<Card> cards) {
         List<Card> result = new ArrayList<>();
         int position = 0;
@@ -53,6 +54,7 @@ public class Cycle {
         return result;
     }
 
+    // Shit happens
     List<Card> getNamesDoWhileWithIterator(List<Card> cards) {
         List<Card> result = new ArrayList<>();
         int position = 0;
@@ -64,6 +66,7 @@ public class Cycle {
         return result;
     }
 
+    //Vrati mi o jeden prvek min, nez jsem dal na vstupu
     List<Card> getNamesDoWhileWithIindex(List<Card> cards) {
         List<Card> result = new ArrayList<>();
         int position = 0;
@@ -75,12 +78,12 @@ public class Cycle {
         return result;
     }
 
-    /*@RequiresApi(api = Build.VERSION_CODES.N)
+    @RequiresApi(api = Build.VERSION_CODES.N)
     List<Card> getNamesWithLoop(List<Card> cards){
         List<Card> result = new ArrayList<>();
         int i = 0;
         cards.stream()
-                .forEach(result.add();
+                .forEach(c -> result.add(c));
 
         return result;
     }*/
