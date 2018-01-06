@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                     String[] cardsLine = line.split(csvSplitBy);
 
                     //cards.add(("Card position: " + cardsLine[0] + " version: " + cardsLine[1] + " Card name: " + cardsLine[2] + " Played: " + cardsLine[3] + " Wins: " + cardsLine[8] + " Power: " + cardsLine[13]));
-                    cards.add(new Card(cardsLine[2], Float.parseFloat(cardsLine[13]), cardsLine[1]));
+                    cards.add(new Card(cardsLine[2], Float.parseFloat(cardsLine[18]), cardsLine[1]));
                 }
             } catch (Exception e) {
                 System.out.println("Shit happens... ");
